@@ -1,0 +1,146 @@
+html {
+    font-family: 'Ligurino', 'Franklin Gothic Medium', sans-serif;
+}
+
+.type {
+    width: 20px;
+    height: 20px;
+}
+
+.profile {
+    width: 80px;
+    position: relative;
+    left: -20px;
+    opacity: 0.5;
+}
+
+.info {
+    min-width: 120px;
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+.info-pic {
+    width: 20px;
+    height: 20px;
+}
+
+.type-profile {
+    display: grid;
+    grid-template-rows: 25% 75%;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.gender {
+    width: 14px;
+    position: relative;
+    top: -1px;
+    left: 30px;
+}
+
+.level {
+    font-size: 10px;
+}
+
+p {
+    margin: 0;
+    position: relative;
+    top: 1px;
+    left: 4px;
+}
+
+.typebox {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 430px) {
+    body {
+        margin: 0 auto;
+        width: 240px;
+        display: grid;
+        row-gap: 5px;
+    }
+
+    .pokemon {
+        padding: 4px 10px 4px 10px;
+        background: #2B4F67;
+        color: white;
+        border: 1px solid;
+        box-sizing: border-box;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 125px auto;
+        grid-template-areas: 
+            "left middle"
+            "right right";
+    }
+
+    .moves {
+        padding-top: 5px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 4px;
+        grid-area: right;
+    }
+
+    .top { 
+        border: solid rgba(217, 217, 217, 0.3);
+        border-width: 0px 0px 1px 0px; 
+    }
+}
+
+@media screen and (min-width: 430px) {
+    body {
+        margin: 0 auto;
+        max-width: 430px;
+        display: grid;
+        row-gap: 5px;
+    }
+
+    .pokemon {
+        padding: 4px 10px 4px 10px;
+        background: #2B4F67;
+        color: white;
+        border: 1px solid;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 125px 80px auto;
+        grid-template-areas: 
+            "left middle right";
+    }
+
+    .moves {
+        display: grid;
+        grid-template-columns: 100%;
+        border-left: 2px solid rgba(217, 217, 217, 0.3);
+        padding-left: 6px;
+        grid-area: right;
+    }
+
+    .top {
+        border: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        margin: 0 auto;
+        max-width: 860px;
+        display: grid;
+        gap: 5px;
+        grid-template-columns: 50% 50%;
+    }
+
+    .moves {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-area: right;
+    }
+}
