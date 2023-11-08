@@ -2,7 +2,7 @@
 A project I created to practice CSS flexbox and grid layouts.
 
 I wanted to create something similar to the team previews in Pokémon Scarlet and Violet:
-![sample](sample-team.jpeg)
+![sample](snapshots/sample-team.jpeg)
 
 ## Nov 7 2023
 Here is the result I have so far:
